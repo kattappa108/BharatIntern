@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background:url(./math-sketches.jpg)">
+    <div class="head">
+
+        <div class="code">
+            <h1>TEMPERATURE CONVERTOR</h1>
+        </div>
+
+        <div class="paragraph">
+            <p><b>1. To convert temperatures in degrees Fahrenheit to Celsius,</b> 
+                subtract 32 and multiply by .5556 (or 5/9).</p>
+            <p><b>2. To convert temperatures in degrees Celsius to Fahrenheit,</b>
+                multiply by 1.8 (or 9/5) and add 32.</p>
+            <p><b>3. To convert temperature in degrees Celsius to Kelvin,</b>
+                K= °C + 273.15</p>
+            <p><b>4. To convert temperature in degrees Farenheit to Kelvin,</b>
+                T(K) = [T(°F) + 459.67]× 5/9</p>
+        </div>
+
+    </div>
+    
+    <div class="temperature">
+        
+        <div class="temperature-container">
+            <label for="Kelvin">Kelvin</label>
+            <input
+            onchange="computeTemp(event)"
+                type="number" 
+                name="Kelvin" 
+                id="Kelvin" 
+                class="Kelvin" 
+                placeholder="Temperature in Kelvin"/> 
+        </div>
+
+       <div class="temperature-container">
+            <label for="Celcius">Celcius</label>
+            <input 
+            onchange ="computeTemp(event)"
+                type="number" 
+                name="Celcius" 
+                id="Celcius" 
+                class="Celcius" 
+                placeholder="Temperature in Celcius"/>    
+        </div>
+
+        <div class="temperature-container">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input 
+            onchange="computeTemp(event)"
+                type="number" 
+                name="Fahrenheit" 
+                id="Fahrenheit" 
+                class="Fahrenheit" 
+                placeholder="Temperature in Fahrenheit"/>    
+        </div>
+
+    </div>    
+</body>
+<script src="./script.js"></script>
+</html>
